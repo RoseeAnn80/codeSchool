@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Přihlášení | Najdi strom</title>
+    
+    <link rel="stylesheet" href="register_styles.css">
+    
+</head>
+<body>
+    <div class="panel"></div>
+    <header>
+        <div class="topnav" id="myTopnav">
+            <div id="logo">
+                <div class="logo"></div>
+                <h1>Najdi<span>STROM</span></h1>
+                <small>krůček do přírody</small>
+            </div>
+            <div id="ul" class="nav-list">
+                <nav>
+                    <ul>
+                        <li class="aktivni"><a href="all_trees.html">Seznam stromů</a></li>
+                        <li><a href="found_tree.html">Najdi strom</a></li>
+                        <li><a href="add_tree.html">Přidej strom</a></li>
+                        <li><a href="register.html">Registruj se </a></li>
+                        <li><a href="login.html">Přihlaš se</a></li>
+                    </ul>
+                </nav>
+            
+        </div>
+    </header>
+    <div class="grid-column center-content image-container">
+        <img src="assets/lone-tree.jpg" style="width: 100%;" alt="Obrázek dubu na pozadí">
+        <div class="image-text">
+            <h1 class="">Mapujeme stromy</h1>            <p>Chcete vědět, kde je nejstarší lípa nebo letitý buk?</p>                    </div>
+        </div>
+    <main>
+        <h1 class="center-content">Přihlašte se</h1>
+        <form>
+    
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Heslo:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <input type="submit" value="Přihlásit">
+            <p class="register-link">Nejste ještě registrováni? <a href="register.html">Registrujte se zde</a>.</p>
+        </form>
+    </main>
+
+    <!-- Paticka -->
+    <footer>
+        <div class="footer-column">
+            <p>&copy; 2023 NajdiSTROM. Všechna práva vyhrazena.</p>
+        </div>
+        <div class="footer-column">
+            <!-- ikony pro socky  -->
+            <a href="#" target="_blank" class="social-icon"><img src="assets/fcb.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="assets/insta.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
