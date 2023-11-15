@@ -24,6 +24,7 @@ Každý strom (druh stromu) bude mít stručný popis o výskytu, atp. : Název,
 
 
 Mapa + body kde jsou stromy Možnost vyhledávání v mapě (?) kontrola VOP mapy.cz - moožnost využití API pro neziskové organizace Poloha dle zaměření
+získaná API ** const API_KEY = 'eyJpIjoyNTcsImMiOjE2Njc0ODU2MjN9.c_UlvdpHGTI_Jb-TNMYlDYuIkCLJaUpi911RdlwPsAY';**
 
 Rozcestník nejčastějších stromů:
 
