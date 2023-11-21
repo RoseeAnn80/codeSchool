@@ -1,0 +1,339 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Thin.ttf);
+
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d59851;
+    padding: 10px 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background: url('assets/logo_ns.png') no-repeat;
+    background-size: 40px 40px;
+    animation: pohybLogo 5s ease-in-out;
+}
+
+#logo p {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 22px;
+    margin-left: 10px;
+
+
+}
+
+#logo a {
+    text-decoration: none; /* Odstranění podtržení od odkazu */
+    color: inherit; /* Dědičná barva, která odpovídá barvě nadřazeného prvku (v tomto případě bílá) */
+    font-weight: 600; /* Mírně tučný text */
+}
+
+
+#logo a:hover {
+    text-decoration: underline; /* Přidání podtržení při najetí myši */
+    color: rgb(124, 120, 114)/* Barva po najetí myši */
+}
+
+
+
+@keyframes pohybLogo {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+#logo>* {
+    margin-left: 10px;
+
+}
+
+#logo h1 {
+    font-weight: normal;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    color: rgb(244, 239, 239);
+}
+
+#logo h1 span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#logo small {
+    text-transform: lowercase;
+    font-size: 0.85em;
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    background-color: #d59851;
+    padding: 10px 20px;
+    top: 0;
+    z-index: 1;
+    /* Přidáno: Nastavení z-index */
+    position: relative;
+    /* Přidáno: pozice je relativní, aby bylo možné nastavit výšku */
+    height: 60px;
+    /* Přidáno: určuje výšku topnav */
+}
+
+
+
+
+/*styl pro navigační položky */
+.nav-list  {
+    display: flex;
+    flex-grow: 1;
+}
+
+
+
+.nav-item {
+    padding: 10px 10px;
+    
+  
+
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul {
+    
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 25px;
+    font-size: 1em;
+    line-height: 4.3em;
+}
+
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover,
+.aktivni a {
+    border-bottom: 2px solid #EF6534;
+}
+
+
+
+.main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image-centre {
+    display: flexbox;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.image-centre img {
+    width: 9%;
+    height: auto;
+
+
+}
+
+
+
+.center-content {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns:auto;
+    text-align: center;
+
+}
+
+
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.image-text p {
+    margin: 0;
+    font-size: 18px;
+}
+.image-container img{
+width: 100%;
+height: auto;
+}
+
+footer {
+    background-color: #d59851;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* změněno z center na space-between */
+    align-items: center;
+}
+
+.footer-column {
+    flex: 1; /* měl by roztáhnout .footer-column na celou šířku */
+    display: flex;
+    align-items: center;
+}
+
+.footer-column p {
+    margin: 20px;
+    font-size: 14px;
+}
+
+.social-icon {
+    margin-right: 10px;
+    align-items: center;
+}
+
+/* Přidaný kód pro obrázky ikon */
+.social-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.page-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Práce s oddělením textových sekcí leda prd a vořech*/
+.left-panel,
+.right-panel {
+    flex: 1;
+}
+
+.image-container img {
+    width: 40%;
+    height: auto;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* form k vložení stromu */
+
+.form-container {
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}

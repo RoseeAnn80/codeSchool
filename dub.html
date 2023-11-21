@@ -1,32 +1,141 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dub neopadavý | Najdi Strom</title>
-    
-    <link rel="stylesheet" href="register_styles.css">
-    
+
+    <link rel="stylesheet" href="tree.css">
+
 </head>
+
 <body>
     <div class="panel"></div>
+
     <header>
         <div class="topnav" id="myTopnav">
             <div id="logo">
                 <div class="logo"></div>
-                <h1>Najdi<span>STROM</span></h1>
+
+                <p class="logo-text"><a href="index.html">NajdiSTROM</a></p>
                 <small>krůček do přírody</small>
             </div>
-            <div id="ul" class="nav-list">
-                <nav>
-                    <ul>
-                        <li class="aktivni"><a href="all_trees.html">Seznam stromů</a></li>
-                        <li><a href="found_tree.html">Najdi strom</a></li>
-                        <li><a href="add_tree.html">Přidej strom</a></li>
-                        <li><a href="register.html">Registruj se </a></li>
-                        <li><a href="login.html">Přihlaš se</a></li>
-                    </ul>
-                </nav>
-            
+
+            <nav id="ul" class="nav-list">
+                <ul>
+                    <li class="aktivni"><a href="all_trees.html">Seznam stromů</a></li>
+                    <li><a href="found_tree.html">Najdi strom</a></li>
+                    <li><a href="add_tree.html">Přidej strom</a></li>
+                    <li><a href="register.html">Registrovat </a></li>
+                    <li><a href="login.html">Přihlásit</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <main>
+        <div class="main">
+            <div class="page-content">
+                <div class="left-panel">
+
+                    <!-- Levá část stránky s obrázkem -->
+                    <div class="image-container">
+                        <img src="assets/dub_vetev.png" alt="Větev dubu">
+                        <img src="assets/listdubu.png" alt="Plod dubu - žalud">
+                        <img src="assets/ploddubu.png" alt="Plod dubu - žalud">
+
+                    </div>
+                </div>
+
+                <div class="right-panel">
+                    <!-- Pravá část stránky s textovými bloky -->
+                    <div class="text-blocks">
+                        <h2>Textový blok 1</h2>
+                        <p>Ut tempus purus at lorem. Etiam commodo dui eget wisi. Maecenas lorem. ...</p>
+                    </div>
+
+                    <div class="text-block">
+                        <h2>Textový blok 2</h2>
+                        <p>Praesent in mauris eu tortor porttitor accumsan. Sed ut perspiciatis unde omnis
+                            iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+                            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                            vitae dicta sunt explicabo. Vivamus porttitor turpis ac leo. Etiam quis quam.
+                            Nunc auctor. Phasellus rhoncus. In convallis. Vestibulum fermentum tortor id mi.
+                            Integer lacinia. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                            odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
+                            sequi nesciunt. Nulla non arcu lacinia neque faucibus fringilla. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</p>
+                    </div>
+
+                    <div class="text-block">
+                        <h2>Textový blok 3</h2>
+                        <p>Quisque porta. Suspendisse sagittis ultrices augue. Aliquam in lorem sit amet leo
+                            accumsan lacinia. Fusce aliquam vestibulum ipsum. Aenean id metus id velit
+                            ullamcorper pulvinar. Cras elementum. Vestibulum fermentum tortor id mi.
+                            Nullam faucibus mi quis velit. Etiam quis quam. Sed ac dolor sit amet purus
+                            malesuada congue. Integer malesuada. </p>
+                    </div>
+
+                    <div class="text-block">
+                        <h2>Textový blok 4</h2>
+                        <p>Donec ipsum massa, ullamcorper in, auctor et, scelerisque sed, est. Nullam lectus
+                            justo, vulputate eget mollis sed, tempor sed magna. Vestibulum fermentum tortor
+                            id mi. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam
+                            nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+                            pariatur? Nulla non lectus sed nisl molestie malesuada. Proin mattis lacinia
+                            justo. Aenean placerat. Etiam sapien elit, consequat eget, tristique non,
+                            venenatis quis, ante. Mauris dictum facilisis augue. Duis ante orci, molestie
+                            vitae vehicula venenatis, tincidunt ac pede. Nullam eget nisl.</p>
+                    </div>
+
+                    <!-- Další textové bloky když budou potřeba -->
+                    <!-- Formulář -->
+                    <div class="form-container">
+                        <h2>Vlož strom</h2>
+                        <form action="#" method="post" enctype="multipart/form-data">
+                            <label for="treeName">Název stromu:</label>
+                            <input type="text" id="treeName" name="treeName"
+                                placeholder="Uveďte český název, případně latinský">
+
+                            <label for="treeHeight">Výška stromu:</label>
+                            <input type="text" id="treeHeight" name="treeHeight"
+                                placeholder="Uvádějte v přibližných metrech">
+
+                            <label for="treeCoordinates">Souřadnice:</label>
+                            <input type="text" id="treeCoordinates" name="treeCoordinates"
+                                placeholder="Zde vložte kde se strom nachází">
+
+                            <label for="treeType">Typ:</label>
+                            <select id="treeType" name="treeType">
+                                <option value="invazivni">Invazivní</option>
+                                <option value="neinvazivni">Neinvazivní</option>
+                            </select>
+
+                            <label for="imageUpload">Nahraj svůj obrázek:</label>
+                            <input type="file" id="imageUpload" name="imageUpload">
+
+                            <button type="submit">Uložit a odeslat ke schválení</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-column">
+            <p>&copy; 2023 NajdiSTROM. Všechna práva vyhrazena.</p>
+
+            <!-- ikony socky -->
+            <a href="#" target="_blank" class="social-icon"><img src="assets/fcb.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="assets/insta.png" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
+
+</html>

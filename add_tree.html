@@ -1,45 +1,103 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Najdi si strom</title>
-    <link rel="stylesheet" href="../MyWork/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-LfWQlF98Tm4aNhvcyfv/3UBLO7L2cGv8DEQnjiwnjB5K+RNIz4NY7e03cOtmwLbU4i2o6ilg5rQpY3DZoOYRg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
-    
 
-<header>
-    <div id="logo">
-        <div class="logo"></div>
-        <h1>Najdi<span>STROM</span></h1>
-        <small>krůček do přírody</small>
-    </div>
-    
 
-    <div class="topnav" id="myTopnav">
-        <div id="ul" class="nav-list">
-            
-           <!--  <div class="topnav" id="myTopnav">
-              
-              <div id="li" class="nav-item"><a href="found_tree.html"> Najdi strom</a></div>
-              <div id="li" class="nav-item"><a href="add_tree.html">Přidej strom</a></div>
-              <div id="li" class="nav-item"><a href="all_trees.html">Seznam stromů</a></div>
-              <div id="li" class="nav-item"><a href="login.html">Přihlášení</a></div>
-              <div id="li" class="nav-item"><a href="register.html">Registrace</a></div>--> 
-              <nav>
-                <ul>
-                    <li class="aktivni"><a href="all_trees.html">Seznam stromů</a></li>
-                    <li><a href="found_tree.html">Najdi strom</a></li>
-                    <li><a href="add_tree.html">Přidej strom</a></li>
-                    <li><a href="login.html">Přihlaš se</a></li>
-                    <li><a href="register.html">Registruj se</a></li>
-                    
-                </ul>
-            </nav>
-            
+
+    <header>
+        
+        <nav class="navbar">
+            <div id="logo">
+                <div class="logo-pic"></div>
+
             </div>
-    </div>
-</header>
+            <a href="index.html" class="nav-branding">NajdiSTROM</a>
 
+            <ul class="nav-menu">
+                <li class="nav-item">
 
+                <li><a href="all_trees.html" class="nav-link">SEZNAM STROMŮ</a></li>
+                <li><a href="found_tree.html" class="nav-link">NAJDI STROM</a></li>
+                <li><a href="add_tree.html" class="nav-link">PŘIDEJ STROM</a></li>
+                <li><a href="register.html" class="nav-link">REGISTRUJ</a></li>
+                <li><a href="login.html" class="nav-link">PŘIHLÁSIT</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+
+        <!-- Formulář -->
+        <section>
+            <div class="form-container">
+                <h2>Vlož strom</h2>
+                <form action="#" method="post" enctype="multipart/form-data" class="animated-form">
+                    <label for="treeName">Název stromu:</label>
+                    <input type="text" id="treeName" name="treeName" placeholder="Uveďte český název, případně latinský">
+        
+                    <label for="treeHeight">Výška stromu:</label>
+                    <input type="text" id="treeHeight" name="treeHeight" placeholder="Uvádějte v přibližných metrech">
+        
+                    <label for="treeCoordinates">Souřadnice:</label>
+                    <input type="text" id="treeCoordinates" name="treeCoordinates" placeholder="Zde vložte kde se strom nachází">
+        
+                    <label for="treeType">Typ:</label>
+                    <select id="treeType" name="treeType">
+                        <option value="invazivni">Invazivní</option>
+                        <option value="neinvazivni">Neinvazivní</option>
+                    </select>
+        
+                    <label for="imageUpload">Nahraj svůj obrázek:</label>
+                    <input type="file" id="imageUpload" name="imageUpload">
+        
+                    <button type="submit">Uložit a odeslat ke schválení</button>
+                </form>
+            </div>
+        </section>
+        
+
+        <section>
+            Tady někde by měla být mapa - využití API k mapy cz
+        </section>
+        <section>
+            <h2 class="how-can-use">Jak můžete používat naši službu?</h2>
+            <ol class="instruction-list">
+                <li><i class="fas fa-user"></i> Vytvořte si bezplatný účet</li>
+                <li><i class="fas fa-tree"></i> Přidávejte, editujte a odstraňujte stromy</li>
+                <li><i class="fas fa-check-circle"></i> Sledujte, co všechno jste již zvládli dokončit</li>
+            </ol>
+        </section>
+        
+
+    </main>
+    <footer>
+        <div class="footer-column">
+            <p>&copy; 2023 NajdiSTROM. Všechna práva vyhrazena.</p>
+
+            <!-- Přidány ikony pro Facebook a Instagram -->
+            <a href="#" target="_blank" class="social-icon"><img src="assets/fcb.png" alt="Facebook"></a>
+            <a href="#" target="_blank" class="social-icon"><img src="assets/insta.png" alt="Instagram"></a>
+        </div>
+    </footer>
+    <script src="styles/script.js"></script>
+</body>
+
+</html>

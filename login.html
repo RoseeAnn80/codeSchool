@@ -1,68 +1,99 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Přihlášení | Najdi strom</title>
-    
-    <link rel="stylesheet" href="register_styles.css">
-    
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+
 <body>
     <div class="panel"></div>
     <header>
-        <div class="topnav" id="myTopnav">
+        <nav class="navbar">
             <div id="logo">
-                <div class="logo"></div>
-                <h1>Najdi<span>STROM</span></h1>
-                <small>krůček do přírody</small>
+                <div class="logo-pic"></div>
+
             </div>
-            <div id="ul" class="nav-list">
-                <nav>
-                    <ul>
-                        <li class="aktivni"><a href="all_trees.html">Seznam stromů</a></li>
-                        <li><a href="found_tree.html">Najdi strom</a></li>
-                        <li><a href="add_tree.html">Přidej strom</a></li>
-                        <li><a href="register.html">Registruj se </a></li>
-                        <li><a href="login.html">Přihlaš se</a></li>
-                    </ul>
-                </nav>
-            
-        </div>
+            <a href="index.html" class="nav-branding">NajdiSTROM</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+
+                <li><a href="all_trees.html" class="nav-link">SEZNAM STROMŮ</a></li>
+                <li><a href="found_tree.html" class="nav-link">NAJDI STROM</a></li>
+                <li><a href="add_tree.html" class="nav-link">PŘIDEJ STROM</a></li>
+                <li><a href="register.html" class="nav-link">REGISTRUJ</a></li>
+                <li><a href="login.html" class="nav-link">PŘIHLÁSIT</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+
     </header>
     <div class="grid-column center-content image-container">
         <img src="assets/lone-tree.jpg" style="width: 100%;" alt="Obrázek dubu na pozadí">
         <div class="image-text">
-            <h1 class="">Mapujeme stromy</h1>            <p>Chcete vědět, kde je nejstarší lípa nebo letitý buk?</p>                    </div>
+            <form>
+
+                <label for="email">Přihlašovací email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Vaše heslo:</label>
+                <input type="password" id="password" name="password" required>
+
+
+                <input type="submit" value="Přihlásit">
+                <p class="register-link">Nejste ještě registrováni? <a href="register.html">Registrujte se zde</a>.</p>
+            </form>
         </div>
-    <main>
-        <h1 class="center-content">Přihlašte se</h1>
-        <form>
-    
+    </div>
+    ...
+        <section class="image-centre">
+            <a href="javor.html"><img src="assets/javor_.png" alt="Ukaž Javor" /></a>
+            <a href="buk.html"><img src="assets/buk.png" alt="Ukaž Buk" /></a>
+            <a href="lipa.html"><img src="assets/lipa_1.png" alt="Ukaž Lípu" /></a>
+            <a href="dub.html"><img src="assets/dub.png" alt="Ukaž Dub" /></a>
+            <a href="kastan.html"><img src="assets/kastan.png" alt="Ukaž Kaštan" /></a>
+            <a href="jedle.html"><img src="assets/jedle.png" alt="Ukaž Jedle" /></a>
+            <a href="jasan.html"><img src="assets/jasan.png" alt="Ukaž Jasan" /></a>
+            <a href="briza.html"><img src="assets/briza.png" alt="Ukaž Břízu" /></a>
+            <a href="smrk.html"><img src="assets/smrk.png" alt="Ukaž Smrk" /></a>
+            <a href="list.html"><img src="assets/list.png" alt="Ukaž List" /></a>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        </section>
+        <section>
+            Tady někde by měla být mapa - využití API k mapy cz
+        </section>
+        <section>
+            <h2 class="sr-only">Jak na to</h2>
+            <ol>
+                <li>Vytvořte si bezplatný účet</li>
+                <li>Přidávejte, editujte a odstraňujte stromy</li>
+                <li>Sledujte, co všechno jste již zvládli dokončit</li>
 
-            <label for="password">Heslo:</label>
-            <input type="password" id="password" name="password" required>
+            </ol>
+        </section>
 
-
-            <input type="submit" value="Přihlásit">
-            <p class="register-link">Nejste ještě registrováni? <a href="register.html">Registrujte se zde</a>.</p>
-        </form>
     </main>
-
-    <!-- Paticka -->
     <footer>
         <div class="footer-column">
             <p>&copy; 2023 NajdiSTROM. Všechna práva vyhrazena.</p>
-        </div>
-        <div class="footer-column">
-            <!-- ikony pro socky  -->
+
+            <!-- Přidány ikony pro Facebook a Instagram -->
             <a href="#" target="_blank" class="social-icon"><img src="assets/fcb.png" alt="Facebook"></a>
             <a href="#" target="_blank" class="social-icon"><img src="assets/insta.png" alt="Instagram"></a>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="styles/script.js"></script>
 </body>
+
 </html>

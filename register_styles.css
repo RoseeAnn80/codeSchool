@@ -202,6 +202,8 @@ label {
 input[type="email"],
 input[type="text"],
 input[type="password"]
+input[type="text"]
+input[type="treeLocation"]
  {
     width: 100%;
     padding: 10px;
