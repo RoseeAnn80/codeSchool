@@ -1,3 +1,15 @@
+Databázová tabulka 
+create table stromy (
+TreeID int,
+TreeName varchar(60),
+LocationN double(60),
+LocationE double(60),
+Years varchar(4),
+Width double(3),
+Height double(8),
+Invasive varchar 
+Non-Invasive  
+
 # codeSchool
 Závěrečná práce  Coding School
 https://www.figma.com/file/i6nx3oOcujKqn5ICD6gDJH/WireGen---AI-GPT-wireframe-generation-(Community)?type=design&node-id=0-1&mode=design&t=HVNwcSEBUq7inaBT-0 
