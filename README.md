@@ -1,3 +1,10 @@
+
+**Příběhy Stromů:
+Kombinace vizuálních prvků s příběhy stromů. Každý strom může mít vlastní stránku s detaily o jeho historii, zajímavostech a fotografiích, cílem je osobnější přístup a zajímavější zážitek pro návštěvníky.
+Virtuální Procházka:
+Virtuální procházku mezi různými druhy stromů. Uživatelé by mohli procházet stránky jako by to bylo ve skutečnosti, s obrázky, zvuky nebo dokonce krátkými videi představujícími různé oblasti.**
+
+
 **Grafy nebo Statistiky:**
 
 Pokud bude dostatek dat, může být i  zobrazení grafů nebo statistik o počtu stromů v různých oblastech, druzích atd.
