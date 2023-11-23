@@ -1,3 +1,7 @@
+**Grafy nebo Statistiky:**
+
+Pokud bude dostatek dat, může být i  zobrazení grafů nebo statistik o počtu stromů v různých oblastech, druzích atd.
+
 Databázová tabulka 
 create table stromy (
 TreeID int,
