@@ -1,4 +1,4 @@
-**vytvoření backofficu<br>
+**VYTVOŘENÍ BACKOFFICU<br>
 Přihlašování a autorizace<br>
 Správa uživatelů<br>
 Vytvoření, úprava a odstranění uživatelských účtů s různými úrovněmi oprávnění.<br>
