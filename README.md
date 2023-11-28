@@ -1,46 +1,46 @@
-**vytvoření backofficu
-Přihlašování a autorizace:
-Správa uživatelů:
-Vytvoření, úprava a odstranění uživatelských účtů s různými úrovněmi oprávnění.
-Správa stromů:
-Zobrazování seznamu stromů s možností vyhledávání a filtrování.
-Možnost přidávat nové stromy, upravovat existující a odstraňovat stromy.
-Přidání informací jako umístění, druh stromu, stav apod.
-Zobrazení statistik nebo informací o zdraví stromů.
-Správa dat:
-Možnost zobrazení a úpravy dat spojených s každým stromem.
-Přidávání a upravování záznamů o monitorování (např. údaje o růstu, zdraví, apod.).
-Záznamy a protokoly:
-Uchovávání záznamů o akcích provedených v backoffice (např. kdo co upravil, kdy a proč).
-Nástroje pro import/export dat:
-Možnost načítat nebo exportovat data ve formátu vhodném pro vaši aplikaci.
-Notifikace a upozornění:
-Možnost nastavit notifikace pro administrátory o důležitých událostech (např. nový záznam o stromu, úprava).
-Grafy a vizualizace:
+**vytvoření backofficu<br>
+Přihlašování a autorizace<br>
+Správa uživatelů<br>
+Vytvoření, úprava a odstranění uživatelských účtů s různými úrovněmi oprávnění.<br>
+Správa stromů:<br>
+Zobrazování seznamu stromů s možností vyhledávání a filtrování.<br>
+Možnost přidávat nové stromy, upravovat existující a odstraňovat stromy.<br>
+Přidání informací jako umístění, druh stromu, stav apod.<br>
+Zobrazení statistik nebo informací o zdraví stromů.<br>
+Správa dat:<br>
+Možnost zobrazení a úpravy dat spojených s každým stromem.<br>
+Přidávání a upravování záznamů o monitorování (např. údaje o růstu, zdraví, apod.).<br>
+Záznamy a protokoly:<br>
+Uchovávání záznamů o akcích provedených v backoffice (např. kdo co upravil, kdy a proč).<br>
+Nástroje pro import/export dat:<br>
+Možnost načítat nebo exportovat data ve formátu vhodném pro vaši aplikaci.<br>
+Notifikace a upozornění:<br>
+Možnost nastavit notifikace pro administrátory o důležitých událostech (např. nový záznam o stromu, úprava).<br>
+Grafy a vizualizace:<br>
 Vytváření grafů nebo vizualizací pro lepší porozumění datům (např. růst stromů v čase).**
 
 
 **Příběhy Stromů:
-Kombinace vizuálních prvků s příběhy stromů. Každý strom může mít vlastní stránku s detaily o jeho historii, zajímavostech a fotografiích, cílem je osobnější přístup a zajímavější zážitek pro návštěvníky.
-Virtuální Procházka:
-Virtuální procházku mezi různými druhy stromů. Uživatelé by mohli procházet stránky jako by to bylo ve skutečnosti, s obrázky, zvuky nebo dokonce krátkými videi představujícími různé oblasti.**
+Kombinace vizuálních prvků s příběhy stromů.<br> Každý strom může mít vlastní stránku s detaily o jeho historii, zajímavostech a fotografiích, cílem je osobnější přístup a zajímavější zážitek pro návštěvníky.
+Virtuální Procházka:<br>
+Virtuální procházku mezi různými druhy stromů.<br>Uživatelé by mohli procházet stránky jako by to bylo ve skutečnosti, s obrázky, zvuky nebo dokonce krátkými videi představujícími různé oblasti.**
 
 
 **Grafy nebo Statistiky:**
 
 Pokud bude dostatek dat, může být i  zobrazení grafů nebo statistik o počtu stromů v různých oblastech, druzích atd.
 
-Databázová tabulka 
-create table stromy (
-TreeID int,
-TreeName varchar(60),
-LocationN double(60),
-LocationE double(60),
-Years varchar(4),
-Width double(3),
-Height double(8),
-Invasive varchar 
-Non-Invasive  
+Databázová tabulka <br>
+create table stromy (<br>
+TreeID int,<br>
+TreeName varchar(60),<br>
+LocationN double(60),<br>
+LocationE double(60),<br>
+Years varchar(4),<br>
+Width double(3),<br>
+Height double(8),<br>
+Invasive varchar <br>
+Non-Invasive  <br>
 
 # codeSchool
 Závěrečná práce  Coding School
