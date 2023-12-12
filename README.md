@@ -1,3 +1,118 @@
+# Projektová Dokumentace: Systém Sběru Dat o Stromech
+
+## Vytvoření Backoffice
+
+1. **Přihlašování a Autorizace**
+   - Implementace bezpečného přihlášení a autorizace.
+
+2. **Správa Uživatelů**
+   - Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.
+
+## Správa Stromů
+
+3. **Zobrazování Seznamu Stromů**
+   - Možnost vyhledávání a filtrování v seznamu stromů.
+
+4. **Správa Informací o Stromech**
+   - Přidání, úprava a odstraňování stromů s detailními informacemi (umístění, druh stromu, stav).
+
+5. **Zobrazení Statistik a Informací o Zdraví Stromů**
+   - Vytvoření přehledů statistik a zdravotních informací o stromech.
+
+## Správa Dat
+
+6. **Zobrazení a Úprava Dat spojených s Každým Stromem**
+   - Detailní správa dat spojených s každým stromem.
+
+7. **Záznamy a Protokoly**
+   - Uchovávání detailních záznamů o akcích provedených v backoffice.
+
+## Nástroje pro Import/Export Dat
+
+8. **Import/Export Funkce pro Data**
+   - Možnost načítat a exportovat data ve vhodném formátu pro aplikaci.
+
+## Notifikace a Upozornění
+
+9. **Konfigurace Notifikací pro Administrátory**
+   - Možnost nastavit notifikace pro důležité události v backoffice.
+
+## Grafy a Vizualizace
+
+10. **Vytváření Grafů a Vizualizací**
+    - Pro lepší porozumění datům, vytvoření grafů a vizualizací.
+
+## Příběhy Stromů
+
+11. **Kombinace Vizuálních Prvků s Příběhy Stromů**
+    - Každý strom s vlastní stránkou obsahující historii, zajímavosti a fotografie.
+
+12. **Virtuální Procházka**
+    - Virtuální procházka mezi různými druhy stromů s vizuálními, zvukovými nebo video prvky.
+
+## Grafy a Statistiky
+
+13. **Zobrazení Grafů a Statistik o Stromech**
+    - V případě dostatečného množství dat, vytvoření grafů a statistik o počtu stromů v různých oblastech.
+
+## Databázová Tabulka  (co by měla obsahovat je ještě předmětem přemýšlení, která data budu sbírat?)
+
+```sql
+CREATE TABLE stromy (
+  TreeID INT,
+  TreeName VARCHAR(60),
+  LocationN DOUBLE(60),
+  LocationE DOUBLE(60),
+  Years VARCHAR(4),
+  Width DOUBLE(3),
+  Height DOUBLE(8),
+  Invasive VARCHAR,
+  NonInvasive VARCHAR
+);
+
+### Položky Menu:
+
+- **Najdi Strom**
+- **Vlož Strom**
+- **Seznam Stromů**
+
+### Registrace a Přihlášení
+
+- **Registrace:** Jméno, Příjmení, Email
+- **Přihlášení:** Email, Heslo, Zapomenuté Heslo
+
+### Funkce "Najdi Strom"
+
+- **Vyhledávání podle Názvu a Lokality**
+- **Výsledek:** Seznam stromů s detaily (Název, Lokalita, Souřadnice)
+
+### Funkce "Vlož Strom"
+
+- Možnost vložení nového stromu s detaily (Stáří, Výška, Šířka kmene, Souřadnice, Typ)
+
+### Karta Uživatele
+
+- **Status Uživatele:** Neználek, Objevovatel, Průzkumník, Dendrolog
+- **Jeho Stromy:** Seznam stromů vložených uživatelem.
+
+## Mapa S Umístěním Stromů
+
+- Možnost vyhledávání v mapě s kontrolou VOP mapy.cz a využitím API.
+
+## Rozcestník Nejčastějších Stromů
+
+- Tvořeno z listů nejčastějších stromů s odkazy na seznamy stromů.
+
+
+
+
+
+
+
+
+
+
+
 <h2>Projektová Dokumentace: Systém Sběru Dat o Stromech</h2>
 <h3>Vytvoření Backoffice</h3>
 <li>Správa Uživatelů</li>
