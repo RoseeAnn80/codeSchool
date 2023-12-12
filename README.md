@@ -119,3 +119,11 @@ CREATE TABLE stromy (
 - Popis postupů pro pravidelné zálohování dat a plány obnovy v případě havárie nebo ztráty dat.
 ## Monitoring A Analýza Chyb:
 - Implementace nástrojů pro sledování chyb, logování a analýzu výkonu aplikace. (Sentry?)
+
+## kontrola přihlášení js
+// Simulace úspěšného přihlášení
+        const validEmail = 'vasemail@example.com';
+        const validPassword = 'vaseheslo';
+
+
+
