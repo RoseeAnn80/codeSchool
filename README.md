@@ -1,4 +1,20 @@
-**VYTVOŘENÍ BACKOFFICU<br>
+ <title>Projektová Dokumentace: Systém Sběru Dat o Stromech</title>
+<h2>Vytvoření Backoffice</h2>
+
+  <ol>
+    <li><strong>Přihlašování a Autorizace</strong>
+      <ul>
+        <li>Implementace bezpečného přihlášení a autorizace.</li>
+      </ul>
+    </li>
+
+    <li><strong>Správa Uživatelů</strong>
+      <ul>
+        <li>Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.</li>
+      </ul>
+    </li>
+  </ol>
+
 Přihlašování a autorizace<br>
 Správa uživatelů<br>
 Vytvoření, úprava a odstranění uživatelských účtů s různými úrovněmi oprávnění.<br>
