@@ -154,8 +154,8 @@ p {
 }
 .image-container {
     display: flex;
-    
     text-align: center;
+   
 
 }
 .image-text {
@@ -284,6 +284,9 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+.reset-password {
+   font-style:italic;
+   }
 
 
 /*sekce seznámení s produktem*/
@@ -312,4 +315,131 @@ section {
 .instruction-list i {
     margin-right: 10px;
     color: #5cb85c; /* Barva ikon */
+}
+/**tři konťáky s infíčkem**/
+
+@media screen and (min-width: 37.5em) {
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tři sloupce */
+    gap: 0px; /* Odsazení mezi obdélníky */
+    justify-content: center;
+    place-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 0;  }
+  
+
+
+}
+
+.rectangle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 100px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid black;
+    
+
+}
+
+#rectangle1 {
+    background-color: #d59851;
+    color: white;
+}
+
+#rectangle2 {
+    
+    background-color: white;
+    color: #333;
+}
+
+#rectangle3 {
+    
+    background-color: #3498db;
+    color: white;
+}
+
+/* Různé velikosti textu pro každej popisek */
+.number {
+    font-size: 45px;
+}
+
+.label {
+    font-size: 14px;
+}
+
+.icon {
+    width: 80px;
+    height: 50px;
+}
+
+/**truchlíme s modalem a javasxcriptem **/
+/* Styly pro zprávy */
+.message {
+    display: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.message--error {
+    color: #d9534f;
+    background-color: #f2dede;
+}
+
+.message--success {
+    color: #5cb85c;
+    background-color: #dff0d8;
+}
+
+/* Styly pro modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+/* styl pro sendviče zprávy */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.toast.toast--success {
+    background-color: #28a745;
+}
+
+.toast.toast--error {
+    background-color: #dc3545;
+}
+
+.toast--show {
+    opacity: 1;
 }

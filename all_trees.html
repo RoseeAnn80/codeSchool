@@ -3,6 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+  </head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
@@ -11,6 +15,7 @@
 
 <body>
     <header>
+        
         <nav class="navbar">
             <div id="logo">
                 <div class="logo-pic"></div>
@@ -37,6 +42,7 @@
         </nav>
 
     </header>
+    <div id="map"></div>
 <main>
 
         <div class="grid-column center-content image-container">
@@ -46,7 +52,7 @@
                 <p>Chcete vědět, kde je nejstarší lípa nebo letitý buk?</p>
             </div>
         </div>
-        ...
+        <div id="map"></div>
         <section class="image-centre">
             <a href="javor.html"><img src="assets/javor_.png" alt="Ukaž Javor" /></a>
             <a href="buk.html"><img src="assets/buk.png" alt="Ukaž Buk" /></a>

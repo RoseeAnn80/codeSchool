@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Přihlášení | Najdi strom</title>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="form.css">
 
 </head>
 
@@ -39,37 +41,47 @@
         </nav>
 
     </header>
-    <div class="grid-column center-content image-container">
-        <img src="assets/lone-tree.jpg" style="width: 100%;" alt="Obrázek dubu na pozadí">
-        <div class="image-text">
-            <form>
-
-                <label for="email">Přihlašovací email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="password">Vaše heslo:</label>
-                <input type="password" id="password" name="password" required>
+    <main>
+        <div class="grid-column center-content image-container">
+            <img src="assets/lone-tree.jpg" style="width: 100%;" alt="Obrázek dubu na pozadí">
+            <div class="image-text">
 
 
-                <input type="submit" value="Přihlásit">
-                <p class="register-link">Nejste ještě registrováni? <a href="register.html">Registrujte se zde</a>.</p>
-            </form>
+                <div class="message message--error">
+                    Zadané údaje nejsou správné. <span class="open-dialog" data-dialog="forgotten-password">Zapomenuté
+                        heslo</span>?
+                </div>
+                <div class="message message--success">
+                    Akce se povedla!
+                </div>
+                <form action="login.html" method="post" class="panel-form">
+                    <label for="email">Přihlašovací email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Vaše heslo:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <input type="submit" value="Přihlásit">
+                
+
+                </form>
+                <p class="register-link">Nejste ještě registrováni? <a href="register.html">Registrujte se zde</a>.
+                </p>
+
+
+            </div>
+            <dialog id="forgotten-password" class="dialog">
+                <div class="close-dialog-wrapper">
+                    <span class="close-dialog">✕</span>
+                </div>
+                <form action="forgotten-password.html" method="post" class="panel-form panel-form--dialog">
+                    <label for="reg-email" class="input-label">Registrační email</label>
+                    <input type="email" name="email" id="reg-email" class="input" required>
+                    <input type="submit" value="Onnovit zapomenuté heslo" class="button button--full button--dialog">
+                </form>
+            </dialog>
         </div>
-    </div>
-    ...
-        <section class="image-centre">
-            <a href="javor.html"><img src="assets/javor_.png" alt="Ukaž Javor" /></a>
-            <a href="buk.html"><img src="assets/buk.png" alt="Ukaž Buk" /></a>
-            <a href="lipa.html"><img src="assets/lipa_1.png" alt="Ukaž Lípu" /></a>
-            <a href="dub.html"><img src="assets/dub.png" alt="Ukaž Dub" /></a>
-            <a href="kastan.html"><img src="assets/kastan.png" alt="Ukaž Kaštan" /></a>
-            <a href="jedle.html"><img src="assets/jedle.png" alt="Ukaž Jedle" /></a>
-            <a href="jasan.html"><img src="assets/jasan.png" alt="Ukaž Jasan" /></a>
-            <a href="briza.html"><img src="assets/briza.png" alt="Ukaž Břízu" /></a>
-            <a href="smrk.html"><img src="assets/smrk.png" alt="Ukaž Smrk" /></a>
-            <a href="list.html"><img src="assets/list.png" alt="Ukaž List" /></a>
 
-        </section>
         <section>
             Tady někde by měla být mapa - využití API k mapy cz
         </section>
@@ -94,6 +106,7 @@
         </div>
     </footer>
     <script src="styles/script.js"></script>
+    <script src="styles/form.js"></script>
 </body>
 
 </html>
