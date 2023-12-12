@@ -2,11 +2,10 @@
 <h3>Vytvoření Backoffice</h3>
 <li>Správa Uživatelů</li>
 Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.
+<li>Přihlašování a Autorizace</li>
+<li>Implementace bezpečného přihlášení a autorizace.</li>
+<li><strong>Správa Uživatelů</strong>
  
-    <li>Přihlašování a Autorizace</li>
-     <li>Implementace bezpečného přihlášení a autorizace.</li>
-
-    <li><strong>Správa Uživatelů</strong>
       <ul>
         <li>Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.</li>
       </ul>
