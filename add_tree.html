@@ -46,30 +46,34 @@
     <main>
 
         <!-- Formulář -->
-        <section>
-            <div class="form-container">
-                <h2>Vlož strom</h2>
-                <form action="#" method="post" enctype="multipart/form-data" class="animated-form">
-                    <label for="treeName">Název stromu:</label>
-                    <input type="text" id="treeName" name="treeName" placeholder="Uveďte český název, případně latinský">
-        
-                    <label for="treeHeight">Výška stromu:</label>
-                    <input type="text" id="treeHeight" name="treeHeight" placeholder="Uvádějte v přibližných metrech">
-        
-                    <label for="treeCoordinates">Souřadnice:</label>
-                    <input type="text" id="treeCoordinates" name="treeCoordinates" placeholder="Zde vložte kde se strom nachází">
-        
-                    <label for="treeType">Typ:</label>
-                    <select id="treeType" name="treeType">
-                        <option value="invazivni">Invazivní</option>
-                        <option value="neinvazivni">Neinvazivní</option>
-                    </select>
-        
-                    <label for="imageUpload">Nahraj svůj obrázek:</label>
-                    <input type="file" id="imageUpload" name="imageUpload">
-        
-                    <button type="submit">Uložit a odeslat ke schválení</button>
-                </form>
+<section>
+    <div class="form-container">
+        <h2>Vlož strom</h2>
+        <!-- Přidáno: action atribut pro odesílání dat na server -->
+        <!-- Přidáno: method atribut s hodnotou "post" pro HTTP POST požadavek -->
+        <form action="/trees/add" method="post" enctype="multipart/form-data" class="animated-form">
+            <label for="treeName">Název stromu:</label>
+            <input type="text" id="treeName" name="treeName" placeholder="Uveďte český název, případně latinský">
+
+            <label for="treeHeight">Výška stromu:</label>
+            <input type="text" id="treeHeight" name="treeHeight" placeholder="Uvádějte v přibližných metrech">
+
+            <label for="treeCoordinates">Souřadnice:</label>
+            <input type="text" id="treeCoordinates" name="treeCoordinates" placeholder="Zde vložte, kde se strom nachází">
+
+            <label for="treeType">Typ:</label>
+            <select id="treeType" name="treeType">
+                <option value="invazivni">Invazivní</option>
+                <option value="neinvazivni">Neinvazivní</option>
+            </select>
+
+            <!-- Přidáno: input pro nahraný obrázek -->
+            <label for="imageUpload">Nahraj svůj obrázek:</label>
+            <input type="file" id="imageUpload" name="imageUpload">
+
+            <!-- Přidáno: tlačítko typu submit pro odeslání formuláře -->
+            <button type="submit">Uložit a odeslat ke schválení</button>
+        </form>
             </div>
         </section>
         
