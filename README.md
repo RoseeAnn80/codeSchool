@@ -1,6 +1,6 @@
- <title>Projektová Dokumentace: Systém Sběru Dat o Stromech</title>
-<h2>Vytvoření Backoffice</h2>
-Správa Uživatelů
+<h2>Projektová Dokumentace: Systém Sběru Dat o Stromech</h2>
+<h3>Vytvoření Backoffice</h3>
+<li>Správa Uživatelů</li>
 Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.
  
     <li><strong>Přihlašování a Autorizace</strong>
