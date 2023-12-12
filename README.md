@@ -128,15 +128,15 @@ CREATE TABLE stromy (
 
 
 -----------------------------------------------------------
-404 - pokácený strom (tudy cesta nevede)
-HP - grafika pro přihlášeného/nepřihlášeného uživatele (jak bude vypadat)
-obecná karta stromu - popis, invazivita, typicky kde se nejvíce vyskytuje apod., druhá část by měla být dynamická (mapa + seznam lokalit kde se vyskytuje)
-detailní karta stromu - popisuje už aktuální strom, dle zadání ř.92
-Jak na stylizace karet? Využít CSS pro každou kartu ->? 
-#generalCard {
+## 404 - pokácený strom (tudy cesta nevede)
+## HP - grafika pro přihlášeného/nepřihlášeného uživatele (jak bude vypadat)
+- obecná karta stromu - popis, invazivita, typicky kde se nejvíce vyskytuje apod., druhá část by měla být dynamická (mapa + seznam lokalit kde se vyskytuje)
+- detailní karta stromu - popisuje už aktuální strom, dle zadání ř.92
+## Jak na stylizace karet? Využít CSS pro každou kartu ->? 
+- #generalCard {
     /* Stylizace obecné karty */
 }
 
-#detailsCard {
+- #detailsCard {
     /* Stylizace karty s podrobnostmi */
 }
