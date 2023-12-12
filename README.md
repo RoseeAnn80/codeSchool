@@ -129,3 +129,4 @@ CREATE TABLE stromy (
 
 -----------------------------------------------------------
 404 - pokácený strom (tudy cesta nevede)
+HP - grafika pro přihlášeného/nepřihlášeného uživatele (jak bude vypadat)
