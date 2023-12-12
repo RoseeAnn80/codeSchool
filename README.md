@@ -3,11 +3,8 @@
 <li>Správa Uživatelů</li>
 Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.
  
-    <li><strong>Přihlašování a Autorizace</strong>
-      <ul>
-        <li>Implementace bezpečného přihlášení a autorizace.</li>
-      </ul>
-    </li>
+    <li>Přihlašování a Autorizace</li>
+     <li>Implementace bezpečného přihlášení a autorizace.</li>
 
     <li><strong>Správa Uživatelů</strong>
       <ul>
