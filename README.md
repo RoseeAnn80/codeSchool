@@ -57,7 +57,6 @@
 
 ## Databázová Tabulka  (co by měla obsahovat je ještě předmětem přemýšlení, která data budu sbírat?)
 
-```sql
 CREATE TABLE stromy (
   TreeID INT,
   TreeName VARCHAR(60),
