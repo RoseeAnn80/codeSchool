@@ -89,7 +89,7 @@ CREATE TABLE stromy (
 
 ### Funkce "Vlož Strom"
 
-- Možnost vložení nového stromu s detaily (jméno česky, latinsky, Stáří, Výška, Šířka kmene, Souřadnice, Typ)
+- Možnost vložení nového stromu s detaily (jméno česky, latinsky, Stáří, Výška, Šířka kmene, Souřadnice, Typ zda je strom ovocný, listnatý, jehličnatý, okrasný atd)
 - invazivita ANO/NE
 
 ### Karta Uživatele
