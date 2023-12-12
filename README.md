@@ -74,6 +74,8 @@ CREATE TABLE stromy (
 - **Najdi Strom**
 - **Vlož Strom**
 - **Seznam Stromů**
+- **Registrace**
+- **Přihlášení**
 
 ### Registrace a Přihlášení
 
