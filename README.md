@@ -127,3 +127,5 @@ CREATE TABLE stromy (
 
 
 
+-----------------------------------------------------------
+404 - pokácený strom (tudy cesta nevede)
