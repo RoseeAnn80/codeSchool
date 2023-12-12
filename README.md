@@ -1,4 +1,4 @@
-# Projektová Dokumentace: Systém Sběru Dat o Stromech
+# Projektová Dokumentace: Systém Sběru Dat o Stromech (najdi-strom)
 
 ## Vytvoření Backoffice
 
