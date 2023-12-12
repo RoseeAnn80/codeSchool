@@ -1,6 +1,9 @@
  <title>Projektová Dokumentace: Systém Sběru Dat o Stromech</title>
 <h2>Vytvoření Backoffice</h2>
-
+Přihlašování a Autorizace
+Implementace bezpečného přihlášení a autorizace.
+Správa Uživatelů
+Vytvoření, úprava a odstranění uživatelských účtů s hierarchií oprávnění.
   <ol>
     <li><strong>Přihlašování a Autorizace</strong>
       <ul>
