@@ -112,4 +112,10 @@ CREATE TABLE stromy (
 - Virtuální Procházka:<br>
 - Virtuální procházku mezi různými druhy stromů.<br>Uživatelé by mohli procházet stránky jako by to bylo ve skutečnosti, s obrázky, zvuky nebo třeba krátkými videi představujícími různé oblasti.
 
+## Podpora Pro Jazyky:
+- Podpora a lokalizace jazyků (ENG).
 
+## Zálohování A Obnova Dat:
+- Popis postupů pro pravidelné zálohování dat a plány obnovy v případě havárie nebo ztráty dat.
+## Monitoring A Analýza Chyb:
+- Implementace nástrojů pro sledování chyb, logování a analýzu výkonu aplikace. (Sentry?)
